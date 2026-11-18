@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { APP_TITLE, APP_URL } from "@/lib/site";
 import ThemeProvider from "@/components/ThemeProvider";
@@ -82,6 +83,7 @@ export default function RootLayout({
             <Toaster position="bottom-right" closeButton />
           </TooltipProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
