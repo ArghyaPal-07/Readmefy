@@ -114,8 +114,3 @@ npm start
 | `npm start` | Serve the production build |
 | `npm run lint` | Lint the project |
 | `npm run typecheck` | Check TypeScript types |
-
-
-## License
-
-MIT.
