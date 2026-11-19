@@ -1,0 +1,2 @@
+<!-- Generated from src/components/ReadmefyLogo.tsx. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" focusable="false" role="img" aria-label="Readmefy"><rect width="32" height="32" rx="8" fill="#155da4"></rect><g stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5.5h-8a2 2 0 0 0-2 2v17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-13L18 5.5Z"></path><path d="M18 5.5v6h6"></path><path d="M11.5 22.5v-8h4a2.5 2.5 0 0 1 0 5h-4M15 19.5l4 3"></path></g></svg>

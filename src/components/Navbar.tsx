@@ -21,6 +21,7 @@ import {
   ChevronDown
 } from "lucide-react";
 import GithubIcon from "@/components/GithubIcon";
+import ReadmefyLogo from "@/components/ReadmefyLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -114,13 +115,7 @@ export default function Navbar({
       <div className="col-span-2 sm:col-span-1 flex items-center gap-3 min-w-0">
         <div className="flex items-center gap-2 shrink-0">
           <Link href="/" className="flex items-center gap-2 rounded-lg text-white" aria-label="Readmefy — home" title="Readmefy — home">
-            <span className="grid size-7 place-items-center rounded-lg bg-brand-gradient shadow-sm">
-            <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-              <path d="M4 5h16" />
-              <path d="M4 12h10" />
-              <path d="M4 19h7" />
-            </svg>
-            </span>
+            <ReadmefyLogo className="size-7 shrink-0" />
             <span className="text-sm font-semibold">Readmefy</span>
           </Link>
         </div>

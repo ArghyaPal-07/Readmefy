@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
+import ReadmefyLogo from "@/components/ReadmefyLogo";
 
 
 export const runtime = "edge";
@@ -44,18 +45,7 @@ export async function GET(req: NextRequest) {
           />
 
           <div style={{ display: "flex", alignItems: "center", gap: "12px", zIndex: 10 }}>
-            <div
-              style={{
-                padding: "8px 12px",
-                borderRadius: "8px",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "20px",
-                fontWeight: "extrabold",
-              }}
-            >
-              ✦
-            </div>
+            <ReadmefyLogo width={40} height={40} />
             <span style={{ fontSize: "24px", fontWeight: "bold", color: "#ffffff", letterSpacing: "-0.5px" }}>
               Readmefy
             </span>

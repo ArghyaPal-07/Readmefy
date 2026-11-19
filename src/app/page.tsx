@@ -17,6 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import GithubIcon from "@/components/GithubIcon";
 import { SiteHeader } from "@/components/landing/site-header";
+import ReadmefyLogo from "@/components/ReadmefyLogo";
 
 const FEATURES = [
   {
@@ -161,8 +162,8 @@ export default function Page() {
                 <Image
                   src="/studio-preview-v2.png"
                   alt="Readmefy studio — drag-and-drop block editor with live GitHub preview and block properties panel"
-                  width={3024}
-                  height={1890}
+                  width={2880}
+                  height={1800}
                   priority
                   sizes="(max-width: 1024px) 100vw, 1024px"
                   className="w-full rounded-xl border border-border"
@@ -304,13 +305,7 @@ export default function Page() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:flex-row sm:px-6">
           <Link href="/" className="flex items-center gap-2.5 font-semibold tracking-tight">
-            <span className="grid size-7 place-items-center rounded-lg bg-foreground text-background">
-              <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                <path d="M4 5h16" />
-                <path d="M4 12h10" />
-                <path d="M4 19h7" />
-              </svg>
-            </span>
+            <ReadmefyLogo className="size-7 shrink-0" />
             <span className="text-[15px]">Readmefy</span>
           </Link>
 

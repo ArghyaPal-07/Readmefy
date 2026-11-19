@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import ReadmefyLogo from '@/components/ReadmefyLogo';
 
 export const runtime = 'edge';
 
@@ -52,38 +53,8 @@ export default function Image() {
           }}
         />
 
-        {/* Logo icon */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundImage: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-            borderRadius: '28px',
-            width: '140px',
-            height: '140px',
-            marginBottom: '36px',
-            border: '1.5px solid rgba(255,255,255,0.12)',
-            boxShadow: '0 20px 60px rgba(99,102,241,0.35)',
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="72"
-            height="72"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#ffffff"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-            <path d="M10 9H8" />
-            <path d="M16 13H8" />
-            <path d="M16 17H8" />
-          </svg>
+        <div style={{ display: 'flex', marginBottom: '36px' }}>
+          <ReadmefyLogo width={140} height={140} />
         </div>
 
         {/* Title */}

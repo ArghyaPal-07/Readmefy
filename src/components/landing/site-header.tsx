@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 import GithubIcon from "@/components/GithubIcon";
+import ReadmefyLogo from "@/components/ReadmefyLogo";
 
 const NAV_LINKS = [
   { label: "Why Readmefy", href: "#features" },
@@ -29,13 +30,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 sm:gap-2.5 font-semibold tracking-tight">
-          <span className="grid size-7 place-items-center rounded-lg bg-brand text-brand-foreground shadow-sm">
-            <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-              <path d="M4 5h16" />
-              <path d="M4 12h10" />
-              <path d="M4 19h7" />
-            </svg>
-          </span>
+          <ReadmefyLogo className="size-7 shrink-0" />
           <span className="text-sm sm:text-[15px]">Readmefy</span>
         </Link>
 

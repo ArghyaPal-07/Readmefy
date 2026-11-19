@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import ReadmefyLogo from '@/components/ReadmefyLogo';
 
 export const runtime = 'edge';
 
@@ -38,33 +39,7 @@ export default function Image() {
         />
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-          <div
-            style={{
-              width: '88px',
-              height: '88px',
-              borderRadius: '20px',
-              backgroundImage: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ffffff"
-              strokeWidth="2.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M4 5h16" />
-              <path d="M4 12h10" />
-              <path d="M4 19h7" />
-            </svg>
-          </div>
+          <ReadmefyLogo width={88} height={88} />
           <div
             style={{
               fontSize: 46,
