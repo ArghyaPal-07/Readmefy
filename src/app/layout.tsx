@@ -18,9 +18,9 @@ const outfit = Outfit({
 });
 
 const previewImage = {
-  url: "/opengraph-image",
-  width: 1200,
-  height: 630,
+  url: "/opengraph.png",
+  width: 1518,
+  height: 782,
   alt: APP_TITLE,
 };
 
