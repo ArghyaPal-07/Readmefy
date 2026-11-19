@@ -17,11 +17,24 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
+const previewImage = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: APP_TITLE,
+};
+
+// Resolve preview URLs against the configured domain or Vercel's production host.
+const metadataUrl = process.env.NEXT_PUBLIC_APP_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : APP_URL);
+
 export const metadata: Metadata = {
   title: APP_TITLE,
   description:
     "Design beautiful GitHub READMEs visually with drag-and-drop blocks, a live GitHub-accurate preview, AI autofill, and one-click push. No more wrestling with raw markdown.",
-  metadataBase: new URL(APP_URL),
+  metadataBase: new URL(metadataUrl),
   keywords: [
     "README builder",
     "GitHub README generator",
@@ -36,11 +49,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: APP_URL,
+    url: metadataUrl,
     title: APP_TITLE,
     description:
       "Drag-and-drop blocks, a live GitHub-accurate preview, AI autofill, and one-click push. No more wrestling with raw markdown.",
     siteName: "Readmefy",
+    images: [previewImage],
   },
   twitter: {
     card: "summary_large_image",
@@ -48,6 +62,7 @@ export const metadata: Metadata = {
     description:
       "Drag-and-drop blocks, a live GitHub-accurate preview, AI autofill, and one-click push. No more wrestling with raw markdown.",
     creator: "@readmely",
+    images: [previewImage],
   },
   robots: {
     index: true,
